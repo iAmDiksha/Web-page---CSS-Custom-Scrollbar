@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto:wght@100&family=Source+Code+Pro:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f1724;
+    color: #fff;
+    width: 70%;
+    margin: 10px auto;
+    font-family:'Edu SA Beginner', cursive;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+body ::selection{
+    background-color: #31fe37;
+    color: #fff;
+}
+
+article :nth-child(-n+2){
+    width: 70%;
+    text-align: center;
+    margin: 10px auto;
+    color: #31fe37;
+    border-bottom: 2px dotted #31fe37;
+}
+
+#first-para::first-letter {
+    color: #11ece5;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+article :last-child{
+    color: #11ece5;
+}
+
+code{
+    background-color:#04070b;
+    display: block;
+    white-space: pre-wrap;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    border-top: 2px solid gold;
+    border-radius: 15px;
+}
+
+code::selection{
+    background-color: white;
+    color: black;
+}
+
+p:nth-of-type(2n+1){
+    border-left: 2px solid blue;
+    padding: 0px 10px;
+}
+
+p:nth-of-type(2n){
+    border-right: 2px solid deeppink;
+    padding: 0px 10px;
+}
+
+/* ========== custom css scrollbar =========== */
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #04070b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #11ece5;
+    height: 10px;
+    border-radius: 10px;
+}
+
+
